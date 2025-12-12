@@ -1,7 +1,18 @@
-# This training course is my training based on watching videos by the author of “[Coding in Flow.](https://www.youtube.com/@codinginflow)”
+# React + TypeScript + Tailwind CSS + Vite Course
 
-## React + TypeScript + Tailwindcss + Vite
+This learning project is based on the video course by the author of the **[Coding in Flow](https://www.youtube.com/@codinginflow){:target="blank"}** channel.
 
-- [Here is the course itself](https://www.youtube.com/watch?v=siTUv1L9ymM)
+## 📺 About the Course
 
-- I will also write my opinion and points that I would like to discuss, so I will try to document all of this in the README of this repository. I hope to finish the course soon (I will write the date in each change) - [12/12/2025]
+- [**Link to the full course**](https://www.youtube.com/watch?v=siTUv1L9ymM){:target="blank"} (opens in a new tab)
+- The course covers a modern development stack:
+  - **React** — Library for building user interfaces
+  - **TypeScript** — Typed JavaScript
+  - **Tailwind CSS** — Utility-first CSS framework
+  - **Vite** — Fast build tool
+
+## 📝 My Notes and Comments
+
+During the learning process, I will record my thoughts, questions, and points for discussion. All will be documented in this README file.
+
+**Course start date:** December 12, 2025
