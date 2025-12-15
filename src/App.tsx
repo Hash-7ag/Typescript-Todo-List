@@ -16,7 +16,15 @@ function App() {
    } 
 
    function addTodoItem(title: string){
-      console.log(title)
+      // console.log(title);
+      setTodos(prevTodos => [
+         ...prevTodos,
+         {
+            id: prevTodos.length + 1,
+            title: title,
+            completed: false
+         }
+      ])
    }
 
   return (

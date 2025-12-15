@@ -9,10 +9,10 @@ function AddTodoForm({todoTitle}: TodoItemAdd) {
    const [todoInfo, setTodoInfo] = useState("");
 
    const handleSubmit = (e: FormEvent) => {
-      e.preventDefault() // Это предотвращает перезагрузку страницы!
-      if (todoInfo.trim()) { // Проверяем, что строка не пустая
+      e.preventDefault()
+      if (todoInfo.trim()) { 
          todoTitle(todoInfo)
-         setTodoInfo("") // Очищаем поле после отправки
+         setTodoInfo("")
       }
    }
 
