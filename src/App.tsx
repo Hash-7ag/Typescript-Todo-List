@@ -2,8 +2,8 @@ import { useState } from "react"
 import { dummyData } from "./data/todos"
 import AddTodoForm from "./components/AddTodoForm";
 // import { ArrowBigUp, ArrowBigDown } from 'lucide-react';
-import { Trash2 } from 'lucide-react';
 import TodoList from "./components/TodoList";
+import TodoSummary from "./components/TodoSummary";
 
 function App() {
    const [todos, setTodos] = useState(dummyData);
@@ -13,10 +13,6 @@ function App() {
    // function toggleListWay(){
    //    return setlistWay(prev => !prev);
    // }
-
-   function clearTodo(){
-      setTodos([]);
-   }
 
    function setTodoCompleted(id: number, completed: boolean) {
       // alert(`Todo with id: ${id} is now ${completed ? "completed" : "cot completed"}`);
@@ -44,9 +40,18 @@ function App() {
       setTodos(prevTodo => prevTodo.filter(todo => todo.id !== id))
    }
 
+   function deleteAllCompletedTodos(){
+      setTodos(prevTodos => prevTodos.filter(todo => !todo.completed));
+   }
+
   return (
     <main className='py-10 h-screen overflow-y-auto'>
-      <h1 className='font-bold text-3xl text-center text-slate-700 pb-4'>Your Todos</h1>
+      <h1 className='font-bold text-3xl text-center text-slate-700 pb-1'>Your Todos</h1>
+      <TodoSummary 
+         todos={todos}
+         deleteAllCompleted={deleteAllCompletedTodos}
+         deleteAll = {() => {setTodos([])}}
+      />
       <div className="max-w-xl mx-auto bg-slate-200 p-10 rounded-xl space-y-6">
          <div>
             <AddTodoForm todoTitle={addTodoItem}/>
@@ -56,22 +61,6 @@ function App() {
                onDelete={deleteTodo}
             />
          </div>
-      </div>
-      <div className="flex flex-col gap-5 absolute top-[6.05rem] left-[61.4rem]">
-         {/* <button className="
-         scale-125 p-2 rounded-lg
-         text-green-600 bg-green-200 hover:bg-green-300 transition-colors duration-200
-         "
-         onClick={() => toggleListWay()}>
-            {listWay ? <ArrowBigUp /> : <ArrowBigDown />}
-         </button> */}
-         <button className="
-         scale-125 p-2 rounded-lg
-         text-red-600 bg-red-200 hover:bg-red-300 transition-colors duration-200
-         "
-         onClick={() => clearTodo()}>
-            <Trash2 />
-         </button>
       </div>
     </main>
   )
