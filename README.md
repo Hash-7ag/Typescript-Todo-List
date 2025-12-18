@@ -1,5 +1,9 @@
 # React + TypeScript + Tailwind CSS + Vite Course
 
+## 🌐 Live Preview
+
+🔗 https://hash-7ag.github.io/Typescript-Todo-List/
+
 This learning project is based on the video course by the author of the **[Coding in Flow](https://www.youtube.com/@codinginflow)** YouTube channel.
 
 ## 📺 About the Course
