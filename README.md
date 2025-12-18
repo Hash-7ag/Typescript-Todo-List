@@ -35,3 +35,36 @@ At the end, I will share my final opinion and conclusions — what I learned, wh
 At the moment, I am short on time, so I will complete the remaining tasks tomorrow.
 
 **Date:** December 15, 2025
+
+---
+
+## Entry #2
+
+It has already been **three days** since I wrote my last comments. I finished the course **two days ago**, and today I have **almost completely finalized the project**.
+
+### What I implemented:
+
+- **Responsive design**
+- **User-friendly UI/UX**
+- **Data persistence using LocalStorage**
+
+Now, regarding the course itself — it is an **excellent course for getting familiar with and understanding how the core technologies work**:
+
+- **React**
+- **Tailwind CSS**
+- **Vite**
+- **TypeScript**
+
+Since I was already familiar with React, it wasn’t difficult for me to understand how everything works together. However, I did not fully master **TypeScript**, and getting acquainted with it was my main priority while watching this course.
+
+In my first entry, I mentioned that this course is not very strong as a _teaching_ course. After finishing it, I realized that this statement was **not entirely correct**. The course is not meant to be a deep educational resource — instead, it is an **introductory and practice-oriented course**.
+
+This course is especially suitable for people who are just starting to learn, for example, **TypeScript**, but already have a solid foundation. During learning, they encounter new concepts such as different variable types, the `tsconfig` file, and other terms and mechanisms that do not exist in plain JavaScript. This course provides a great opportunity for such learners to **practice**, gain confidence, and then continue studying the required topics in more depth.
+
+Although I used TypeScript as the main example here, the same idea applies to the other three core tools used in this project (**Vite, React, and Tailwind CSS**).
+
+Additionally, I discovered **Lucide React** during this project. It is a very convenient library for using clean and beautiful icons, similar to React Icons. However, it felt more lightweight and comfortable to use, especially for smaller projects.
+
+I will not create full code documentation, as you can watch the course yourself and compare it with my implementation. My code does not differ significantly from the original one — only minor changes related to design and small details.
+
+**Date:** December 18, 2025
